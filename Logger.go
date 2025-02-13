@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func SendLogs() {
+func SendUDPLogs() {
 	// Define the receiver's address
 	receiverAddr := "127.0.0.1:8080" // Change as needed
 	conn, err := net.Dial("udp", receiverAddr)
